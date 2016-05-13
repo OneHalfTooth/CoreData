@@ -19,6 +19,30 @@
 
 @implementation ViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSString * str = nil;
+    NSMutableDictionary * dic = [[NSMutableDictionary alloc]init];
+    dic[@"d"] = nil;
+    [dic setObject:str forKey:@"key"];
+    [dic removeObjectForKey:nil];
+
+
+    NSMutableArray * array = [[NSMutableArray alloc]init];
+    //    [array addObject:nil];
+    //    array[0] = nil;
+    [array insertObject:nil atIndex:1];
+    [array insertObject:nil atIndex:0];
+    [array addObject:nil];
+    [array removeObjectAtIndex:5];
+    [array removeObject:nil];
+    NSString * str11= nil;
+    NSArray * temp = @[@"d",str11,@"sd"];
+
+    //    dic[@"asdf"] = str;
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
 
 - (IBAction)addButtonDidCliked:(id)sender {
     BOOL rel = [[DataManager manager] instertModel:self.add.text];
@@ -49,22 +73,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

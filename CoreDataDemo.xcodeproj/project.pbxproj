@@ -25,6 +25,14 @@
 		104416D01CE47F7E002D0D56 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 104416CF1CE47F7E002D0D56 /* Model.m */; };
 		104416D11CE47F7E002D0D56 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 104416CF1CE47F7E002D0D56 /* Model.m */; };
 		104416D21CE47F7E002D0D56 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 104416CF1CE47F7E002D0D56 /* Model.m */; };
+		104416EA1CE565B8002D0D56 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 104416E91CE565B8002D0D56 /* NSMutableDictionary+Safe.m */; };
+		104416EB1CE565B8002D0D56 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 104416E91CE565B8002D0D56 /* NSMutableDictionary+Safe.m */; };
+		104416EC1CE565B8002D0D56 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 104416E91CE565B8002D0D56 /* NSMutableDictionary+Safe.m */; };
+		104416EF1CE565CF002D0D56 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 104416EE1CE565CF002D0D56 /* NSMutableArray+Safe.m */; };
+		104416F01CE565CF002D0D56 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 104416EE1CE565CF002D0D56 /* NSMutableArray+Safe.m */; };
+		104416F11CE565CF002D0D56 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 104416EE1CE565CF002D0D56 /* NSMutableArray+Safe.m */; };
+		106C9C561CE574A50080ECE0 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 106C9C551CE574A50080ECE0 /* NSArray+Safe.m */; };
+		106C9C591CE5754A0080ECE0 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 106C9C581CE5754A0080ECE0 /* NSDictionary+Safe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +75,10 @@
 		104416C91CE47F4B002D0D56 /* data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = data.xcdatamodel; sourceTree = "<group>"; };
 		104416CE1CE47F7E002D0D56 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		104416CF1CE47F7E002D0D56 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		104416E91CE565B8002D0D56 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		104416EE1CE565CF002D0D56 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
+		106C9C551CE574A50080ECE0 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		106C9C581CE5754A0080ECE0 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,7 @@
 		1044168A1CE475F6002D0D56 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				106C9C5A1CE583780080ECE0 /* Safe */,
 				104416C71CE47F2E002D0D56 /* rescoure */,
 				104416C11CE4761B002D0D56 /* CoreDataManager */,
 				1044168E1CE475F6002D0D56 /* AppDelegate.h */,
@@ -184,6 +197,17 @@
 				104416CF1CE47F7E002D0D56 /* Model.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		106C9C5A1CE583780080ECE0 /* Safe */ = {
+			isa = PBXGroup;
+			children = (
+				106C9C581CE5754A0080ECE0 /* NSDictionary+Safe.m */,
+				106C9C551CE574A50080ECE0 /* NSArray+Safe.m */,
+				104416EE1CE565CF002D0D56 /* NSMutableArray+Safe.m */,
+				104416E91CE565B8002D0D56 /* NSMutableDictionary+Safe.m */,
+			);
+			name = Safe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +342,13 @@
 			files = (
 				104416931CE475F6002D0D56 /* ViewController.m in Sources */,
 				104416C41CE476DF002D0D56 /* DataManager.m in Sources */,
+				106C9C561CE574A50080ECE0 /* NSArray+Safe.m in Sources */,
 				104416991CE475F6002D0D56 /* CoreDataDemo.xcdatamodeld in Sources */,
+				104416EA1CE565B8002D0D56 /* NSMutableDictionary+Safe.m in Sources */,
 				104416901CE475F6002D0D56 /* AppDelegate.m in Sources */,
+				106C9C591CE5754A0080ECE0 /* NSDictionary+Safe.m in Sources */,
 				104416D01CE47F7E002D0D56 /* Model.m in Sources */,
+				104416EF1CE565CF002D0D56 /* NSMutableArray+Safe.m in Sources */,
 				1044168D1CE475F6002D0D56 /* main.m in Sources */,
 				104416CA1CE47F4B002D0D56 /* data.xcdatamodeld in Sources */,
 			);
@@ -330,8 +358,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104416EB1CE565B8002D0D56 /* NSMutableDictionary+Safe.m in Sources */,
 				104416A91CE475F7002D0D56 /* CoreDataDemoTests.m in Sources */,
 				104416C51CE476DF002D0D56 /* DataManager.m in Sources */,
+				104416F01CE565CF002D0D56 /* NSMutableArray+Safe.m in Sources */,
 				104416CB1CE47F4B002D0D56 /* data.xcdatamodeld in Sources */,
 				104416D11CE47F7E002D0D56 /* Model.m in Sources */,
 			);
@@ -341,8 +371,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104416EC1CE565B8002D0D56 /* NSMutableDictionary+Safe.m in Sources */,
 				104416B41CE475F7002D0D56 /* CoreDataDemoUITests.m in Sources */,
 				104416C61CE476DF002D0D56 /* DataManager.m in Sources */,
+				104416F11CE565CF002D0D56 /* NSMutableArray+Safe.m in Sources */,
 				104416CC1CE47F4B002D0D56 /* data.xcdatamodeld in Sources */,
 				104416D21CE47F7E002D0D56 /* Model.m in Sources */,
 			);
@@ -554,6 +586,7 @@
 				104416BA1CE475F7002D0D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		104416BB1CE475F7002D0D56 /* Build configuration list for PBXNativeTarget "CoreDataDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +595,7 @@
 				104416BD1CE475F7002D0D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		104416BE1CE475F7002D0D56 /* Build configuration list for PBXNativeTarget "CoreDataDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +604,7 @@
 				104416C01CE475F7002D0D56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
